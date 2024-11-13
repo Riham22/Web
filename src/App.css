@@ -1,0 +1,233 @@
+body {
+  background-color: rgb(33, 2, 45);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+AnimatedBackground{
+  opacity: 0.9;
+}
+
+.app{
+  width:70vw;
+  margin: auto;
+  padding: 1rem;
+  min-width: 100%;
+  text-align: center;
+  z-index: 300;
+  position: sticky;
+  top: 10%;
+}
+.addTask{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 300;
+  margin: 1rem 0;
+ 
+
+}
+
+#myInput{
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px hidden transparent;
+  background-color: rgb(57, 51, 82);
+  width: 70%;
+  font-size: large;
+  color: rgb(221, 221, 221);
+}
+#myInput:focus{
+  outline: none;
+  border: none;
+}
+.timeInput{
+  padding: 1rem ;
+  margin:1rem;
+  border-radius: 1rem;
+  border: 1px hidden transparent;
+  background-color: rgb(57, 51, 82);
+  /* width: 70%; */
+  font-size: large;
+  color: rgb(221, 221, 221);
+}
+.timeInput:focus{
+  outline: none;
+  border: none;
+}
+#editInput{
+  padding: 1rem;
+  cursor:col-resize;
+  border-radius: 0.5rem;
+  border: 1px hidden transparent;
+  background-color: rgb(211, 211, 211);
+  z-index: 300;
+
+  /* width: 70%; */
+  font-size: medium;
+  color: #333;
+}
+#editInput:focus{
+  outline: none;
+  border: none;
+}
+button{
+  background-color: #494f9c;
+  padding: 1rem;
+  margin: 0 1rem;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  min-width: 20%;
+  font-size: large;
+  color: white;
+
+}
+#save{
+  background-color: #494f9c;
+
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  min-width: 5%;
+  font-size:small;
+  color: white;
+}
+.list{
+  /* border: #000 solid 2rem; */
+  scroll-behavior: smooth;
+  z-index: 300;
+
+  /* padding: 20px; */
+  position: relative;
+  top: 2rem;
+  width: 95%;
+  scroll-behavior: smooth;
+  flex-wrap: nowrap;
+}
+
+
+#mytask{
+  /* float:left; */
+  margin: 0.5rem;
+  padding: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: rgba(155, 142, 255, 0.91);
+  /* z-index: 150; */
+  background-color: rgba(247, 247, 247, 0.9);
+  border-radius: 1rem;
+  padding: 0.5rem ;
+
+}
+
+
+
+#mytask span{
+  overflow: hidden;
+  font: 1.2em sans-serif;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+  line-break: anywhere;
+  max-lines: 2;
+  max-width: 80%;
+  padding: 0 20px;
+  margin: 1rem;
+  /* border-left: 3px solid rgb(74, 55, 91); */
+  border-radius: 0.1rem;
+
+}
+
+
+
+#remove,remove:hover{
+  border-radius: 0.75rem;
+  /* margin: 0 0.5rem; */
+}
+#remove:hover{
+  color: red;
+  /* border:2px solid red; */
+  transition: 0.2s ease-in;
+}
+#remove{
+  /* border: 2px solid rgb(47, 47, 47);  */
+  color: rgb(47, 47, 47);
+  padding: 1rem;
+}
+#check,check:hover{
+  border-radius: 0.75rem;
+  /* margin: 0 0.5rem; */
+}
+#check:hover{
+  color: white;
+  /* border:2px solid white; */
+  transition: 0.2s ease-in;
+}
+#check{
+  /* border: 2px solid rgb(47, 47, 47);  */
+  color: rgb(47, 47, 47);
+  padding: 1rem;
+}
+#editing,editing:hover{
+  border-radius: 0.75rem;
+  /* margin: 0 0.5rem; */
+}
+#editing:hover{
+  color: white;
+  /* border:2px solid white; */
+  transition: 0.2s ease-in;
+}
+#editing{
+  /* border: 2px solid rgb(47, 47, 47);  */
+  color: rgb(47, 47, 47);
+  padding: 1rem;
+}
+.iconsrow{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 1rem;
+  /* flex-wrap: wrap; */
+}
+
+.priority{
+  color: #fff;
+  font-size: small;
+
+}
+
+.times,.completedTime {
+  margin: 10px;
+  font-size: 0.9rem;
+  align-items: center;
+  /* color: #777; */
+}
+.navbar{
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  justify-content: flex-start;
+  align-items: center;
+  /* float: left; */
+}
+#navbutton{
+  background-color: #494f9c;
+  padding: 1rem 0;
+  margin: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  font-size: small;
+  font-weight: bold;
+  color: white;
+}
+#priorityInput, #priorityInput:focus{
+  outline: none;
+  border: none;
+}
+select{
+  border-radius: 1rem;
+}

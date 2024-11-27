@@ -108,24 +108,33 @@ button{
 }
 
 
-#mytask{
+.mytask{
   /* float:left; */
   margin: 0.5rem;
   padding: 1rem auto;
   display: flex;
   flex-direction: column;
   width: 100%;
-  color: rgba(155, 142, 255, 0.91);
-  /* z-index: 150; */
+  color: rgba(53, 49, 80, 0.91);
   background-color: rgba(247, 247, 247, 0.9);
   border-radius: 1rem;
   padding: 0.5rem ;
 
 }
 
+.completed-task{
+  background-color: #494f9c;
+  color: #fff;
+  margin: 0.5rem;
+  padding: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 0.5rem ;
+}
 
-
-#mytask span{
+.mytask span,.completed-task span{
   overflow: hidden;
   font: 1.2em sans-serif;
   flex-wrap: wrap;
@@ -145,19 +154,16 @@ button{
 
 #remove,remove:hover{
   border-radius: 0.75rem;
-  /* margin: 0 0.5rem; */
 }
 #remove:hover{
   color: red;
-  /* border:2px solid red; */
   transition: 0.2s ease-in;
 }
 #remove{
-  /* border: 2px solid rgb(47, 47, 47);  */
   color: rgb(47, 47, 47);
   padding: 1rem;
 }
-#check,check:hover{
+#check,#check:hover{
   border-radius: 0.75rem;
   /* margin: 0 0.5rem; */
 }
@@ -171,7 +177,7 @@ button{
   color: rgb(47, 47, 47);
   padding: 1rem;
 }
-#editing,editing:hover{
+#editing,#editing:hover{
   border-radius: 0.75rem;
   /* margin: 0 0.5rem; */
 }
@@ -231,3 +237,12 @@ button{
 select{
   border-radius: 1rem;
 }
+.task {
+  background-color: rgba(247, 247, 247, 0.9);
+  color: #222;
+}
+.task-completed {
+  background-color: rgba(155, 142, 255, 0.9);
+  color: white;
+}
+
